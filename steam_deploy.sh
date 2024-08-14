@@ -134,6 +134,7 @@ echo "#        Test login             #"
 echo "#################################"
 echo ""
 
+echo steamcmd +set_steam_guard_code "$steam_totp" +login "$steam_username" +quit;
 steamcmd +set_steam_guard_code "$steam_totp" +login "$steam_username" +quit;
 
 ret=$?
